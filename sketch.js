@@ -1,7 +1,7 @@
 
 
 var yz = 100;
-
+var boxcolor = 0
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	
@@ -9,23 +9,19 @@ function setup() {
 
 function draw() {
 	
-
+// mouse pressed
   if (mouseIsPressed) {
-    fill(0);
-  } else {
-    fill(200, mouseX/4, mouseY/2);
-   // fill(255);
-  }
-
+   boxcolor = 0;
+   yz = 100;
+}
   
-
-//fill(red,green,blue);
-
+// rectangle
 fill(mouseX,0,mouseY);
   rect(yz, mouseY, 100, 560);
   yz = yz + 1
 
 
+// text
 fill(115,0,113);
 
   textSize(100);
