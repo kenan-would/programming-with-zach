@@ -20,6 +20,6 @@ fill(mouseX,0,mouseY);
 // text
 fill(115,0,113);
   textSize(100);
-	text("WOW i Love VIM", 200, mouseY-200);
+	text("WOW i Love VIM", 200, random(0,windowHeight);
   }
  
