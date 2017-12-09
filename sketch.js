@@ -8,24 +8,21 @@ function setup() {
 }
 
 function draw() {
-	
-// mouse pressed
-function mousePressed {
-   background(0);
-  
-}
-  
+	  
 // rectangle
 fill(mouseX,0,mouseY);
   ellipse(mouseX, mouseY, 20);
   
-
-
 // text
 fill(115,0,113);
 
   textSize(100);
 	text("WOW i Love VIM", 200, mouseY-200);
 
-
 }
+// mouse pressed
+  function mousePressed {
+     background(0);
+ 
+  }
+ 
