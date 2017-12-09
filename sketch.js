@@ -21,9 +21,9 @@ function draw() {
 
 //fill(red,green,blue);
 
-fill(mouseX,0,0);
+fill(mouseX,0,mouseY);
   rect(mouseX, yz, 100, 560);
-  
+  yz = yz + 1
 
 
 fill(115,0,113);
