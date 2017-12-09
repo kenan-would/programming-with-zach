@@ -1,6 +1,4 @@
 
-
-var yz = 100;
 var boxcolor = 0
 function setup() {
 	createCanvas(windowWidth, windowHeight);
@@ -20,6 +18,6 @@ fill(mouseX,0,mouseY);
 // text
 fill(115,0,113);
   textSize(100);
-	text("WOW i Love VIM", 200, random(0,windowHeight);
+	text("WOW i Love VIM", 200, random(0,windowHeight));
   }
  
