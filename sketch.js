@@ -21,7 +21,7 @@ fill(115,0,113);
 
 }
 // mouse pressed
-  function mousePressed {
+  function mousePressed() {
      background(0);
  
   }
