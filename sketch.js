@@ -22,7 +22,7 @@ function draw() {
 //fill(red,green,blue);
 
 fill(mouseX,0,mouseY);
-  rect(mouseX, yz, 100, 560);
+  rect(yz, mouseY, 100, 560);
   yz = yz + 1
 
 
