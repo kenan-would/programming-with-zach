@@ -26,10 +26,10 @@ fill(mouseX,0,0);
   
 
 
-fill(15,105,113);
+fill(115,0,113);
 
   textSize(100);
-	text("test", 200, mouseX-200);
+	text("WOW i Love VIM", 200, mouseX-200);
 
 
 }
