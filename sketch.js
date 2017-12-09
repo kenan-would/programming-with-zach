@@ -11,7 +11,7 @@ function draw() {
 	
 // mouse pressed
 function mousePressed {
-   background = fill(0);
+   background(0);
   
 }
   
