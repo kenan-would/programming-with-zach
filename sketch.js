@@ -11,21 +11,21 @@ function draw() {
 	
 // mouse pressed
   if (mouseIsPressed) {
-   boxcolor = 0;
-   yz = 100;
+   background = 0;
+  
 }
   
 // rectangle
 fill(mouseX,0,mouseY);
-  rect(yz, mouseY, 100, 560);
-  yz = yz + 1
+  ellipse(mouseX, mouseY, 20);
+  
 
 
 // text
 fill(115,0,113);
 
   textSize(100);
-	text("WOW i Love VIM", 200, mouseX-200);
+	text("WOW i Love VIM", 200, mouseY-200);
 
 
 }
