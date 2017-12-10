@@ -1,13 +1,14 @@
 
 var boxcolor = 0;
 var eSize = 20;
-var biggerButton, smallerButton;
+var biggerButton, smallerButton, currentSize;
 
 function setup() {
 	createCanvas(800, 400);
   createP('');
   biggerButton = createButton("+");
   smallerButton = createButton("-");
+  currentSize = createElement('h1',eSize);
   biggerButton.mousePressed(increaseSize);
   smallerButton.mousePressed(decreaseSize);
 }
@@ -30,7 +31,9 @@ function draw() {
 
 function increaseSize() {
   eSize = eSize + 5;
+  currentSize.html(eSize);
 }
 function decreaseSize() {
-   eSize = eSize - 5 
+   eSize = eSize - 5;
+   currentSize.html(eSize); 
    } 
