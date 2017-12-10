@@ -1,11 +1,12 @@
 
 var boxcolor = 0;
 var eSize = 20;
+var biggerButton, smallerButton;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
-  var biggerButton = createButton('+');
-  var smallerButton = createButton('-');
+  biggerButton = createButton('+');
+  smallerButton = createButton('-');
   biggerButton.mousePressed(increaseSize);
   smallerButton.mousePressed(decreaseSize);
 }
