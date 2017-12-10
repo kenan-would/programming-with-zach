@@ -4,7 +4,7 @@ var eSize = 20;
 var biggerButton, smallerButton;
 
 function setup() {
-	createCanvas(windowWidth, windowHeight);
+	createCanvas(400, 400);
   biggerButton = createButton("+");
   smallerButton = createButton("-");
   biggerButton.mousePressed(increaseSize);
@@ -24,7 +24,7 @@ function draw() {
   // text
   fill(115,0,113);
   textSize(100);
-	text("WOW i Love VIM", 200, random(0,windowHeight));
+	text("WOW i Love VIM", 200, random(0,400));
 }
 
 function increaseSize() {
