@@ -5,8 +5,8 @@ var biggerButton, smallerButton;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
-  biggerButton = createButton('+');
-  smallerButton = createButton('-');
+  biggerButton = createButton("+");
+  smallerButton = createButton("-");
   biggerButton.mousePressed(increaseSize);
   smallerButton.mousePressed(decreaseSize);
 }
@@ -27,11 +27,9 @@ function draw() {
 	text("WOW i Love VIM", 200, random(0,windowHeight));
 }
 
-function increaseSize(){
+function increaseSize() {
   eSize = eSize + 5;
 }
-
 function decreaseSize() {
-  eSize = eSize - 5
-}
-
+   eSize = eSize - 5 
+   } 
