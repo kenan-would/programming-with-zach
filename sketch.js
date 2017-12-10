@@ -4,7 +4,8 @@ var eSize = 20;
 var biggerButton, smallerButton;
 
 function setup() {
-	createCanvas(400, 400);
+	createCanvas(800, 400);
+  createP('');
   biggerButton = createButton("+");
   smallerButton = createButton("-");
   biggerButton.mousePressed(increaseSize);
