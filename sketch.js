@@ -3,6 +3,7 @@ var boxcolor = 0;
 var eSize = 20;
 var biggerButton, smallerButton, rSlider, gSlider, bSlider, resetButton;
 var r,g,b;
+var randX, randY;
 
 function setup() {
 	createCanvas(800, 400);
@@ -39,25 +40,26 @@ function draw() {
   text(eSize,40,40);
 
   fill(255,0,0);
-  text(r,40+60,40);
+  text(r,width*.7,40);
 
   fill(0,255,0);
-  text(g,40+120,40);
+  text(g,width*.8,40);
 
   fill(0,0,255);
-  text(b,40+180,40);
+  text(b,width*.9,40);
+
+  fill(r,g,b);
+  textSize(100);
+  textAlign(LEFT);
+  text("WOW i Love VIM", 10, randY);
+
 }
 
 
   // mouse pressed
   function mousePressed() {
   background(0);
-  
-    // text
-  fill(r,g,b);
-  textSize(100);
-  textAlign(LEFT);
-  text("WOW i Love VIM", 10, random(50,400));
+    randXY = random(50,height);
 }
 
 function increaseSize() {
