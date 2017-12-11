@@ -1,47 +1,61 @@
 
 var boxcolor = 0;
 var eSize = 20;
-var biggerButton, smallerButton, currentSize, rSlider, gSlider, bSlider;
+var biggerButton, smallerButton, rSlider, gSlider, bSlider, resetButton;
 
 function setup() {
 	createCanvas(800, 400);
+  
   createP('');
   biggerButton = createButton("+");
   smallerButton = createButton("-");
-  currentSize = createElement('h1',eSize);
+  
+  createP('');
+  resetButton = createButton("RESET");
   biggerButton.mousePressed(increaseSize);
   smallerButton.mousePressed(decreaseSize);
-  rSlider = createSlider(0,255,100); 
+  
+  createP('');
+  Slider = createSlider(0,255,100); 
   gSlider = createSlider(0,255,100);
   bSlider = createSlider(0,255,100);
-  
 
 }
 
 function draw() {
-	  
+  var r = rSlider.value();
+  var g = gSlider.value();  
+  var b = bSlider.value();
+  
   // rectangle
   fill(mouseX,0,mouseY);
   ellipse(mouseX, mouseY, eSize);
+  
   fill(255);
   textAlign(CENTER);
   textSize(40);
   text(eSize,40,40);
+
+  fill(255,0,0);
+  text(r,40+60,40);
+
+  fill(0,255,0);
+  text(g,40+120,40);
+
+  fill(0,0,255);
+  text(g,40+180,40);
 }
 
 
   // mouse pressed
   function mousePressed() {
-    var r = rSlider.value();
-    var g = gSlider.value();
-    var b = bSlider.value();
     background(0);
   
     // text
   fill(r,g,b);
   textSize(100);
-  
-  text("WOW i Love VIM", 20, random(0,400));
+  textAlign(LEFT);
+  text("WOW i Love VIM", 10, random(50,400));
 }
 
 function increaseSize() {
