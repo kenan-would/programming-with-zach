@@ -2,10 +2,12 @@
 var boxcolor = 0;
 var eSize = 20;
 var biggerButton, smallerButton, rSlider, gSlider, bSlider, resetButton;
+var r,g,b;
 
 function setup() {
 	createCanvas(800, 400);
-  
+   background(0);
+
   createP('');
   biggerButton = createButton("+");
   smallerButton = createButton("-");
@@ -23,9 +25,9 @@ function setup() {
 }
 
 function draw() {
-  var r = rSlider.value();
-  var g = gSlider.value();  
-  var b = bSlider.value();
+   r = rSlider.value();
+   g = gSlider.value();  
+   b = bSlider.value();
   
   // rectangle
   fill(mouseX,0,mouseY);
@@ -43,13 +45,13 @@ function draw() {
   text(g,40+120,40);
 
   fill(0,0,255);
-  text(g,40+180,40);
+  text(b,40+180,40);
 }
 
 
   // mouse pressed
   function mousePressed() {
-    background(0);
+  background(0);
   
     // text
   fill(r,g,b);
