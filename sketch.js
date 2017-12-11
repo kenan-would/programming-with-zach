@@ -16,7 +16,7 @@ function setup() {
   smallerButton.mousePressed(decreaseSize);
   
   createP('');
-  Slider = createSlider(0,255,100); 
+  rSlider = createSlider(0,255,100); 
   gSlider = createSlider(0,255,100);
   bSlider = createSlider(0,255,100);
 
