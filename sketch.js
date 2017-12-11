@@ -3,7 +3,7 @@ var boxcolor = 0;
 var eSize = 20;
 var biggerButton, smallerButton, currentSize, rSlider, gSlider, bSlider;
 
-function setup() {P-
+function setup() {
 	createCanvas(800, 400);
   createP('');
   biggerButton = createButton("+");
@@ -11,10 +11,11 @@ function setup() {P-
   currentSize = createElement('h1',eSize);
   biggerButton.mousePressed(increaseSize);
   smallerButton.mousePressed(decreaseSize);
-  rSlider = createSlider(0,0,100); 
-  gSlider = createSlider(0,0,100);
-  bSlider = createSlider(0,0,100);
+  rSlider = createSlider(0,255,100); 
+  gSlider = createSlider(0,255,100);
+  bSlider = createSlider(0,255,100);
   
+
 }
 
 function draw() {
@@ -31,9 +32,13 @@ function draw() {
 
   // mouse pressed
   function mousePressed() {
-     background(0);
-  // text
-  fill(rSlider.input(),gSlider.input(),bSlider.input());
+    var r = rSlider.value();
+    var g = gSlider.value();
+    var b = bSlider.value();
+    background(0);
+  
+    // text
+  fill(r,g,b);
   textSize(100);
   
   text("WOW i Love VIM", 20, random(0,400));
