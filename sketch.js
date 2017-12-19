@@ -14,7 +14,7 @@ function setup() {
   smallerButton = createButton("-");
   
   createP('');
-  resetButton = createButton("RESET");
+  resetButton = createButton("Reset");
   biggerButton.mousePressed(increaseSize);
   smallerButton.mousePressed(decreaseSize);
   
@@ -40,7 +40,7 @@ function draw() {
   text(eSize,40,40);
 
   fill(r,g,b);
-  textSize(40);
+  textSize(50);
   text("I love VIM!!!",100,100);
 
 
