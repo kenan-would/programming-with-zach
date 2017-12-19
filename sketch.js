@@ -39,6 +39,11 @@ function draw() {
   textSize(40);
   text(eSize,40,40);
 
+  fill(255);
+  textSize(40);
+  text("I love VIM!!!",40,40);
+
+
   fill(255,0,0);
   text(r,width*.7,40);
 
@@ -47,12 +52,6 @@ function draw() {
 
   fill(0,0,255);
   text(b,width*.9,40);
-
-  fill(r,g,b);
-  textSize(100);
-  textAlign(LEFT);
-  text("WOW i Love VIM", 10, randY);
-
 }
 
 
@@ -60,6 +59,7 @@ function draw() {
   function mousePressed() {
   background(0);
     randXY = random(50,height);
+    // text
 }
 
 function increaseSize() {
