@@ -41,7 +41,7 @@ function draw() {
 
   fill(r,g,b);
   textSize(40);
-  text("I love VIM!!!",40,40);
+  text("I love VIM!!!",100,100);
 
 
   fill(255,0,0);
